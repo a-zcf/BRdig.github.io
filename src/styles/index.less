@@ -1,0 +1,85 @@
+@import "theme.less";
+.weui-toast__content {  //提示信息
+  font-size: 14px;
+}
+
+.weui-btn:after{ border: 0 !important;}
+.weui-dialog__btn_primary { //弹窗的确定字体颜色
+  color: #000 !important;
+}
+.vux-popup-header-right { //下面弹窗确定字体颜色
+  color: @mainColor !important;
+}
+.vux-popup-header { //下面弹窗，滑动
+  line-height: 1 !important;
+  height: auto !important;
+  .vux-popup-header-left, .vux-popup-header-title, .vux-popup-header-right {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+.mescroll-empty{ padding-top: 50px !important;
+  .empty-tip{ font-size: 14px !important;}
+}
+.scroller-item {  //下面弹窗，滑动选项
+  line-height: 1 !important;
+  height: auto !important;
+  padding: 9px 0;
+}
+.weui-tabbar{background-color: @whiteColor !important; //tab导航栏
+  i.weui-tabbar__icon, .weui-tabbar__icon > i{ font-size: 24px;}
+}
+.weui-tabbar__item { padding-top: 0 !important;
+  color: @lightblue !important;
+  .weui-tabbar__label {
+    color: @lightblue;
+    margin-top: 5px;
+  }
+  .weui-tabbar__icon > i {
+    color: @lightblue;
+  }
+}
+.vux-cell-box:not(:first-child):before { //边框距离
+  left: 15PX !important;
+}
+
+.vux-header { //header
+  width:100%;
+  position:absolute !important;
+  left:0; top:0;
+  z-index:100;
+  background-color: @mainColor;
+  color: @whiteColor;
+  .vux-header-title {
+    height: auto !important;
+    line-height: 1 !important;
+    padding: 11PX 0;
+  }
+  .vux-header-left, .vux-header-right {
+    line-height: 1 !important;
+    padding: 4PX 0;
+  }
+}
+.weui-dialog__ft {  //提示弹窗确定、取消按钮
+  line-height: 1 !important; padding: 15px 0;
+}
+.vux-badge {  //消息标注
+  line-height: 1.5 !important;
+  height: 18px !important;
+  width: 18px !important;
+}
+.mescroll-downwarp .downwarp-content {  //下拉刷新
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vux-tab .vux-tab-item {  //头部切换
+  line-height: 1 !important;
+  padding:15px 0;
+}
+
+.vux-header .vux-header-right a, .vux-header .vux-header-left a { //header
+  color: @whiteColor !important;
+}
+textarea{ font-family: Helvetica,sans-serif;}
